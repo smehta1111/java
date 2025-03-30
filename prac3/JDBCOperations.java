@@ -1,8 +1,4 @@
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.Scanner;
 
 public class JDBCOperations {
@@ -11,7 +7,7 @@ public class JDBCOperations {
   private static Connection getConnection()
   throws Exception {
     
-    String jdbcUrl = "jdbc:mysql://localhost:3306/sybsc?useUnicode=true&characterEncoding=utf8";
+    String jdbcUrl = "jdbc:mysql://localhost:3306/sybsc";
     String jdbcUser = "root";
     String jdbcPassword = "root";
     
