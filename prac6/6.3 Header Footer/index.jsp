@@ -1,8 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-
-<jsp:include page="header.jsp" />
-
-<h2>Main Content Area</h2>
-<p>This is the main content of the page.</p>
-
-<jsp:include page="footer.jsp" />
+<%@ page contentType="text/html" pageEncoding="UTF-8" %>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+</head>
+<body>
+    <jsp:include page="header.jsp"/>
+    <h2>This is the main content</h2>
+    <jsp:include page="footer.jsp"/>
+</body>
+</html>
