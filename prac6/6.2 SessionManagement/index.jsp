@@ -3,7 +3,6 @@
 <!DOCTYPE html> 
 <html> 
 <head> 
-<meta charset="UTF-8"> 
 <title>Session Management</title> 
 </head> 
 <body> 
