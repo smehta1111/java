@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ page import="java.util.Date" %>
+
 <html>
 <head>
     <title>JSP Scope Demonstration</title>
@@ -31,6 +31,6 @@
     <p>Application Scope Variable: <%= application.getAttribute("applicationVar") %></p>
 
     <hr>
-    <p>Current Time: <%= new Date() %></p>
+    
 </body>
 </html>
