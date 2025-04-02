@@ -9,7 +9,7 @@
 
     <% 
         // Page Scope
-        pageContext.setAttribute("pageVar", "This is Page Scope", PageContext.PAGE_SCOPE);
+        pageContext.setAttribute("pageVar", "This is Page Scope");
 
         // Request Scope
         request.setAttribute("requestVar", "This is Request Scope");
