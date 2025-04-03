@@ -1,0 +1,29 @@
+package com.example.springmvc;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@SpringBootApplication
+@RestController  // Marks this class as a Controller
+@RequestMapping("/")  // Ensures root mapping
+public class SpringmvcApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(SpringmvcApplication.class, args);
+    }
+
+    @GetMapping("/")  // Ensure proper mapping
+    public String getUser() {
+        User user = new User("John Doe", 25);
+        
+        // View is generated inside Java (No JSP)
+        return "<html><head><title>User Info</title></head><body>"
+                + "<h2>User Details</h2>"
+                + "<p>Name: " + user.getName() + "</p>"
+                + "<p>Age: " + user.getAge() + "</p>"
+                + "</body></html>";
+    }
+}
